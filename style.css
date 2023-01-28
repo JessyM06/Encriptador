@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/fondo.gif);
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+header,
+main {
+    padding: 0 5%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 25px auto 0 auto;
+    padding: 15px 50px 10px 50px;
+    color: #144272;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.logo-alura {
+    position: absolute;
+}
+
+.titulo {
+    margin: 0 auto 15px auto;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    margin-top: 40px;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    gap: 6%;
+    margin: 2rem 0;
+}
+
+.block-msj {
+    flex: 1 50%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    padding-left: 10%;
+}
+
+.block-msj textarea {
+    flex: 1 100%;
+    background-color: #9ef1b75e;
+    font-family: 'Inter';
+    font-size: 2rem;
+    line-height: 150%;
+    border: 0;
+    border-radius: 2rem;
+    resize: unset;
+    padding: 2rem 5%;
+    height: 180px;
+    box-shadow: 0px 25px 35px -10px rgba(0, 0, 0, 0.3);
+}
+
+.block-msj textarea::placeholder {
+    opacity: 1;
+    color: #A75D5D;
+}
+
+.inicio {
+    flex: 1 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.inicio p {
+    display: inline-block;
+    color: #4E6C50;
+    font-size: 1rem;
+    margin-left: 25px;
+}
+
+input {
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 150%;
+    box-shadow: 0px 25px 35px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+}
+
+.botones {
+    flex: 1 100%;
+    display: flex;
+    flex-flow: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.botones input {
+    flex: 1 50%;
+}
+
+.btnEncriptar {
+    background-color: #ABC270;
+    border: 1.5px solid #144272;
+    color: #144272;
+}
+
+.btnEncriptar:hover {
+    background-color: #ABC270;
+    box-shadow: inset 0 0 40px rgba(4, 17, 53, 0.89);
+    cursor: pointer;
+}
+
+.btnDesencriptar,
+.btnCopiar {
+    background-color: #2269b4;
+    border: 1.5px solid #B5D5C5;
+    color: #B5D5C5;
+}
+
+.btnDesencriptar:hover,
+.btnCopiar:hover {
+    border: 0;
+    background-color: #4696eb;
+    box-shadow: inset 0 0 8px rgba(20, 185, 94, 0.863);
+    cursor: pointer;
+}
+
+.btnEncriptar:active,
+.btnDesencriptar:active,
+.btnCopiar:active {
+    transform: scale(0.9);
+}
+
+.block-resultado {
+    flex: 1 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ef1b75e;
+    border-radius: 2rem;
+    box-shadow: 0px 25px 35px -10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: fit-content;
+    height: auto;
+}
+
+.imgPanda {
+    animation: movimiento 4s linear infinite;
+}
+
+.instruccion {
+    flex: 1 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 7.5%;
+}
+
+.instruccion img {
+    width: 50%;
+}
+
+.msj-informacion {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.msj-informacion p {
+    margin-top: 1rem;
+    color: #A75D5D;
+}
+
+.mensaje {
+    flex: 1 100%;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 7.5%;
+}
+
+.mensaje textarea {
+    flex: 1 100%;
+    background-color: unset;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #A75D5D;
+    border: 0;
+    resize: unset;
+    height: 328px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 700;
+    color: #144272;
+}
+
+.btnCopiar {
+    flex: 1 100%;
+    margin-top: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #567189b0;
+    padding: 1rem;
+}
+
+footer p {
+    display: inline-flex;
+    gap: 0.3rem;
+    font-size: 15px;
+    color: #144272;
+}
+
+footer strong {
+    font-weight: 700;
+}
+
+footer a {
+    display: flex;
+    margin: 0 50px;
+    height: 50%;
+    align-items: center;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #144272;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a img {
+    height: 60px;
+    margin: 5px 15px;
+    border-radius: 25px;
+}
+
+
+/*RESPONSIVE*/
+
+@media all and (max-width:1090px) {
+    .titulo {
+        font-size: 2.5em;
+        text-align: center;
+        display: flex;
+    }
+
+    main {
+        flex-flow: row wrap;
+    }
+
+    .block-msj {
+        flex: 1 100%;
+        margin-bottom: 4rem;
+        padding-left: 0;
+    }
+
+    .block-msj textarea {
+        height: 400px;
+    }
+
+    .block-resultado {
+        flex: 1 100%;
+    }
+
+    .instruccion {
+        padding: 3.5%;
+    }
+
+    .instruccion img {
+        display: none;
+    }
+
+    .msj-informacion {
+        margin-top: 0;
+    }
+
+    .mensaje {
+        padding: 3.5%;
+    }
+
+}
+
+@media all and (max-width:700px) {
+
+    header,
+    main {
+        padding: 0 5%;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .block-msj textarea {
+        width: 100%;
+        height: 200px;
+    }
+
+    .botones input {
+        flex: 1 100%;
+    }
+
+    .instruccion {
+        padding: 10%;
+    }
+
+    .mensaje {
+        padding: 10%;
+    }
+
+    .mensaje textarea {
+        height: 200px;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    
+}
